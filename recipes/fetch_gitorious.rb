@@ -1,3 +1,9 @@
+directory "/var/www/gitorious" do
+#  owner u['id']
+#  group u['gid'] || u['id']
+  mode "0755"
+end
+
 git "/var/www/gitorious" do
   repository "git://gitorious.org/gitorious/mainline.git"
   reference "master"
