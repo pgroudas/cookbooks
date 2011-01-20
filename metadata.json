@@ -1,0 +1,29 @@
+{
+  "recipes": {
+  },
+  "groupings": {
+  },
+  "recommendations": {
+  },
+  "description": "Installs/Configures gitorious",
+  "suggestions": {
+  },
+  "attributes": {
+  },
+  "conflicting": {
+  },
+  "dependencies": {
+  },
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
+  "providing": {
+  },
+  "platforms": {
+  },
+  "version": "0.0.1",
+  "license": "All rights reserved",
+  "maintainer": "YOUR_COMPANY_NAME",
+  "name": "gitorious",
+  "replacing": {
+  },
+  "maintainer_email": "YOUR_EMAIL"
+}
