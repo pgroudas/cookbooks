@@ -14,3 +14,5 @@ include_recipe "gitorious::sphinx"
 include_recipe "gitorious::fetch_gitorious"
 #Don't think this is necessary...
 #include_recipe "gitorious::link_binaries"
+include_recipe "gitorious::init_scripts"
+include_recipe "gitorious::configure_apache"
