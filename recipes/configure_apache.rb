@@ -1,13 +1,12 @@
-#bash "install-passenger-apache2-module" do
-#  code "/usr/bin/passenger-install-apache2-module -a"
-#end
+bash "install-passenger-apache2-module" do
+  code "/usr/bin/passenger-install-apache2-module -a"
+end
 
 cookbook_file "/etc/apache2/mods-available/passenger.load" do
   source "passenger.load"
 end
 
-
-bash "enable-stuff" do
+bash "enable-apache-modules" do
   code <<-EOH
     a2enmod passenger
     a2enmod rewrite
