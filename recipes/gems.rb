@@ -13,7 +13,9 @@ gem_package "rack"
 gem_package "ruby-hmac"
 gem_package "rake"
 gem_package "stompserver"
-gem_package "passenger"
+gem_package "passenger" do
+  version "3.0.2"
+end
 gem_package "rails"
 gem_package "rdiscount" do
   version "1.3.1.1"
