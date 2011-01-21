@@ -6,6 +6,8 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+#todo make this conditional based on instance type...
+include_recipe "gitorious::configure_swap"
 include_recipe "gitorious::apt_packages"
 include_recipe "gitorious::gems"
 include_recipe "gitorious::sphinx"
