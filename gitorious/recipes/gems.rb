@@ -9,7 +9,9 @@ gem_package "ruby-openid"
 gem_package "mime-types"
 gem_package "diff-lcs"
 gem_package "json"
-gem_package "rack"
+gem_package "rack" do
+  version "1.0.1"
+end
 gem_package "ruby-hmac"
 gem_package "rake"
 gem_package "stompserver"
