@@ -1,14 +1,12 @@
-development:
-  
-production: 
-  
-test:
-  # The session secret key (`apg -m 64` is always useful for this kinda stuff)
-  cookie_secret: ssssht
+    production:
+  # The session secret key (
+  ` is always useful for this kinda stuff)
+  cookie_secret:FudLesdyFreygikjadTafwijyowwivoachpivrumRocBilIgshunPadChuheusOjoynmujHeifBittyuelIphmem*OthsopOjlitvefBimVakVawg;OlnomoamAidlagBuvyikOchSonEagejOtocCajkighokgeavShiemCyawdyegherribowwecefEeftmiUgWajeazvetGibtawgAidpecawtotAgcetfoloiWiakfon2WealroBliquoglaByhitmuIvOmjuOcawbEikJafHamivcyHulyiexfipNavjonIbbawwedAphGejyojNedhexDycsOavjauldArmEavLitCar=KnotissisnicdugdauvKuWor8flutbip-
+
 
   # The path where git repositories are stored. The actual (bare) repositories resides
   # in repository_base_path/#{project.slug}/#{repository.name}.git/:
-  repository_base_path: "/tmp/git-repos"
+  repository_base_path: "/var/www/gitorious/repositories"
 
   # Stuff that's in the html <head>. custom stats javascript code etc
   extra_html_head_data: 
@@ -17,19 +15,19 @@ test:
   system_message: 
   
   # Port the ./script/gitorious script should use:
-  gitorious_client_port: 3000
+  gitorious_client_port: 80
 
   # Host the ./script/gitorious script should use:
-  gitorious_client_host: localhost
+  gitorious_client_host: git.paulgroudas.com
 
   # Host which is serving the gitorious app, eg "gitorious.org"
-  gitorious_host: gitorious.test
+  gitorious_host: git.paulgroudas.com
 
   # User which is running git daemon
   gitorious_user: git
 
   # Email address to the support for the Gitorious server
-  gitorious_support_email: support@gitorious.org
+  gitorious_support_email: me@paulgroudas.com
 
   # Email spam on server errors to:
   exception_notification_emails:  
@@ -38,26 +36,26 @@ test:
   mangle_email_addresses: true
 
   # Enable or Disable Public Mode (true) or Private Mode (false)
-  public_mode: true
+  public_mode: false
 
   # Define your locale
   locale: en
 
   # Where should we store generated tarballs?
   # (should be readable by webserver, since we tell it to send the file using X-Sendfile)
-  archive_cache_dir: "/path/to/tarballs-cache"
+  archive_cache_dir: "/var/www/gitorious/tarballs"
   # Which directory should we work in when we generate tarballs, before moving 
   # them to the above dir?
-  archive_work_dir: "/path/to/tarballs-work"
+  archive_work_dir: "/tmp/tarballs-work"
 
   # is it only site admins who can create new projects?
-  only_site_admins_can_create_projects: false
+  only_site_admins_can_create_projects: true
   
   # Should we hide HTTP clone urls?
   hide_http_clone_urls: false
 
   # Is this gitorious.org? Read: should we have a very flashy homepage?
-  is_gitorious_dot_org: true
+  is_gitorious_dot_org: false
 
   # Pick a default license
   #default_license: GNU Affero General Public License (AGPLv3)
