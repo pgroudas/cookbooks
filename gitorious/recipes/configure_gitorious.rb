@@ -42,3 +42,24 @@ directory "/var/www/gitorious/tarballs" do
   mode "0755"
   action :create
 end
+
+template "/var/www/gitorious/config/broker.yml" do
+  source "broker.yml.erb"
+  mode 0644
+  owner "git"
+  group "git"
+end
+
+template "/var/www/gitorious/config/database.yml" do
+  source "database.yml.erb"
+  mode 0644
+  owner "git"
+  group "git"
+end
+
+template "/var/www/gitorious/config/gitorious.yml" do
+  source "gitorious.yml.erb"
+  mode 0644
+  owner "git"
+  group "git"
+end
