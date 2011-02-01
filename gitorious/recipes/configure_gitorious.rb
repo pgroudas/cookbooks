@@ -86,7 +86,11 @@ bash "bootstrap-rails-environment" do
     /usr/bin/rake db:create &&
     /usr/bin/rake db:migrate &&
     /usr/bin/rake ultrasphinx:bootstrap > /var/www/gitorious/log/test_output.log &&
-    /usr/bin/crontab -r &&
+    /usr/bin/crontab -r
     echo "* 0 * * * cd /var/www/gitorious && /usr/bin/rake ultrasphinx:index RAILS_ENV=production" | /usr/bin/crontab
   EOH
+end
+
+service "apache2" do
+  action [:restart]
 end

@@ -26,13 +26,13 @@ bash "desable-sites" do
   code <<-EOH
     a2dissite default-ssl
     a2dissite default
-    a2dissite gitorious-ssl
   EOH
 end
 
 bash "enable-sites" do
   code <<-EOH
     a2ensite gitorious
+    a2dissite gitorious-ssl
   EOH
 end
 

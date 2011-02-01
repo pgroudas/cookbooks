@@ -1,3 +1,5 @@
+#Not needed?
+
 #ln -s /var/lib/gems/1.8/bin/rake /usr/bin
 link "/usr/bin/rake" do
   to "/var/lib/gems/1.8/bin/rake"

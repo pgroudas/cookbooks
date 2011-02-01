@@ -1,10 +1,9 @@
 {
   "recipes": {
   },
-  "groupings": {
-  },
   "recommendations": {
   },
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
   "description": "Installs/Configures gitorious",
   "suggestions": {
   },
@@ -14,16 +13,17 @@
   },
   "dependencies": {
   },
-  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES:\n\n= USAGE:\n\n",
   "providing": {
   },
   "platforms": {
   },
+  "maintainer": "Paul Groudas",
   "version": "0.0.1",
-  "license": "All rights reserved",
-  "maintainer": "YOUR_COMPANY_NAME",
-  "name": "gitorious",
   "replacing": {
   },
-  "maintainer_email": "YOUR_EMAIL"
+  "license": "Apache 2.0",
+  "name": "gitorious",
+  "maintainer_email": "me@paulgroudas.com",
+  "groupings": {
+  }
 }
